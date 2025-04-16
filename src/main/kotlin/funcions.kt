@@ -2,8 +2,10 @@ package org.example
 
 fun main(){
     add()
-    val result = add(2, 6)
+    val result = add(b=2,a= 6)// named argument
+    val result1 = subtract(b=3)
     println(result)
+    println(result1)
 }
 
 fun add(){
@@ -13,6 +15,8 @@ fun add(){
 fun add(a:Int, b:Int): Int{
     return a + b
 }
+
+fun subtract(a:Int = 10, b:Int) = a - b;//default argument
 
 fun hello():Unit{
 
